@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="container">
+        <h1>GitHub Repositories</h1>
+       <form onsubmit="getRepositories(event)">
+        <label for="username">Enter GitHub Username:</label>
+        <input type="text" id="username" placeholder="Enter GitHub username" required>
+        <button type="submit">Get Repositories</button>
+       </form>
+        <div id="loader" class="loader"></div>
+        <div id="repositories" class="repositories"></div>
+        <div id="pagination" class="pagination"></div>
+      </div> -->
+      <div class="container">
+        <h1 class="heading">GitHub Repositories</h1>
+       <div class="form-div">
+        <label for="username">Enter GitHub Username:</label>
+        <input type="text" id="username" placeholder="Enter GitHub username">
+        <button onclick="getRepositories(event)">Get Repositories</button>
+       </div>
+        <div id="loader" class="loader"></div>
+        <div id="totalRepositories" class="total-repositories"></div>
+        <div id="repositories" class="repositories"></div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

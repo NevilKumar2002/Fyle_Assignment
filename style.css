@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    border:2px solid black;
+    padding:20px;
+  }
+  
+  .container {
+    /* max-width: 800px; */
+    margin:50px auto;
+  }
+  
+  input, button {
+    margin: 10px 0;
+  }
+  
+  .loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    display: none;
+    text-align: center;
+  }
+  .avatar-image{
+    width:5rem;
+    height:5rem;
+  }
+  .repository-element{
+    border:2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40vw;
+    height:55vh;
+    margin: 10px;
+    padding: 1rem;
+  }
+  .language-button{
+    width:16vw;
+    /* height:100px !important; */
+    background-color: #3498db;
+    color:white;
+    padding:0.7rem;
+    /* border-radius: 0.5rem; */
+  }
+  #repositories{
+    display: flex;
+    flex-wrap: wrap;
+    /* border:2px solid red; */
+    width:100%;
+
+  }
+  .heading{
+    text-align: center;
+  }
+  .form-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin:20px;
+  }
+  .form-div input{
+    width:15vw;
+    height:40px;
+  }
+  .form-div button{
+    width:15vw;
+    background-color: rgb(109, 109, 242);
+    color:white;
+    height:40px;
+    margin-left: 50px;
+
+  }
+  .form-div button:hover{
+    background-color: rgb(121, 227, 15);
+    color:white;
+  }
+  #totalRepositories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:2px solid black;
+  }
+  .paginationsButton{
+    /* text-align: center; */
+    /* margin-left: 30vw; */
+
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .repositories {
+    margin-top: 20px;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+  }
+  
+  
